@@ -1,8 +1,8 @@
 GIT
   remote: git@bitbucket.org:onfido/monster.git
-  revision: be625a79910ddac3ff836b886bdbd53f2fb9ac9a
+  revision: 3af207f97086bb1ad8f06a2dd0a14b80fb9b86c1
   specs:
-    monster (0.1.12)
+    monster (0.1.13)
       browserstack-local
       chronic
       faker
@@ -17,7 +17,7 @@ GIT
       report_builder
       retries
       rspec-expectations
-      selenium-webdriver (= 3.4.0)
+      selenium-webdriver (= 3.4.3)
 
 GIT
   remote: https://github.com/cristian-m-vasile/cucumber-api.git
@@ -109,15 +109,13 @@ GEM
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
     rubyzip (1.2.1)
-    selenium-webdriver (3.4.0)
+    selenium-webdriver (3.4.3)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
-      websocket (~> 1.0)
     slop (3.6.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.4)
-    websocket (1.2.4)
 
 PLATFORMS
   ruby
