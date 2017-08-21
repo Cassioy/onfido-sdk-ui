@@ -47,9 +47,9 @@ do
 
   if [ "$NODE_ENV" == "production" ]
   then
-    DEPLOY_DOMAIN=https://${DEPLOY_SUBDOMAIN}-${REPO_NAME}-${REPO_OWNER}.surge.sh
+    export DEPLOY_DOMAIN=https://${DEPLOY_SUBDOMAIN}-${REPO_NAME}-${REPO_OWNER}.surge.sh
   else
-    DEPLOY_DOMAIN=https://staging-${DEPLOY_SUBDOMAIN}-${REPO_NAME}-${REPO_OWNER}.surge.sh
+    export DEPLOY_DOMAIN=https://staging-${DEPLOY_SUBDOMAIN}-${REPO_NAME}-${REPO_OWNER}.surge.sh
   fi
 
   surge --project ${DEPLOY_PATH} --domain $DEPLOY_DOMAIN;

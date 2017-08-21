@@ -1,6 +1,6 @@
 GIT
   remote: git@bitbucket.org:onfido/monster.git
-  revision: 3af207f97086bb1ad8f06a2dd0a14b80fb9b86c1
+  revision: 11763fe0f3b29cdade450a5cd82c10a13ee20533
   specs:
     monster (0.1.13)
       browserstack-local
@@ -85,7 +85,7 @@ GEM
       mini_portile2 (~> 2.2.0)
     oauth (0.5.3)
     parallel (1.12.0)
-    parallel_tests (2.14.2)
+    parallel_tests (2.14.3)
       parallel
     pry (0.10.4)
       coderay (~> 1.1.0)

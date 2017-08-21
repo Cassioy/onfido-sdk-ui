@@ -1,4 +1,6 @@
 language: node_js
+addons:
+  chrome: stable
 node_js:
   - 5
 os:
@@ -9,6 +11,8 @@ env:
 cache:
   directories:
     - "node_modules"
+before_install:
+  - gem install bundler
 install:
   - npm --production=false install
 script:
@@ -17,3 +21,5 @@ after_success:
   - python node_modules/travis-weigh-in/weigh_in.py dist/onfido.min.js
   - chmod ugo+x ./deploy.sh
   - ./deploy.sh
+  - chmod ugo+x ./test.sh
+  - ./test.sh
