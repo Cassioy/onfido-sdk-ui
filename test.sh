@@ -4,7 +4,7 @@
 TESTS_PATH=./test
 
 # go to test directory
-cd TESTS_PATH
+cd $TESTS_PATH
 
 # install gem dependencies
 bundle install
