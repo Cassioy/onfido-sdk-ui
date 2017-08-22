@@ -19,7 +19,7 @@ before_install:
   - chmod 600 ~/.ssh/monster_rsa
   - gem install bundler
 install:
-  # - npm --production=false install
+  - npm --production=false install
 script:
   # - npm run build
 after_success:
