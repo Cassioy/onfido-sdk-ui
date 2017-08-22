@@ -2,16 +2,16 @@ language: node_js
 addons:
   chrome: stable
   ssh_known_hosts: bitbucket.org
-node_js:
-  - 5
+# node_js:
+#   - 5
 os:
   - linux
 env:
   - NODE_ENV=staging
   # - NODE_ENV=production
-cache:
-  directories:
-    - "node_modules"
+# cache:
+#   directories:
+#     - "node_modules"
 before_install:
   - openssl aes-256-cbc -K $encrypted_1688a3f2e0a8_key -iv $encrypted_1688a3f2e0a8_iv
     -in test/monster_rsa.enc -out ~/.ssh/monster_rsa -d
