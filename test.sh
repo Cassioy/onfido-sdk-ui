@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # set path for test directory
 TESTS_PATH=./test
 
