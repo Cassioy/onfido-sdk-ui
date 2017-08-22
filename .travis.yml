@@ -14,7 +14,7 @@ cache:
 before_install:
   - openssl aes-256-cbc -K $encrypted_1688a3f2e0a8_key -iv $encrypted_1688a3f2e0a8_iv
     -in test/monster_rsa.enc -out ~/.ssh/monster_rsa -d
-  - export GIT_SSH_COMMAND="ssh -i ~/.ssh/monster_rsa -F /dev/null"
+  - ls -l ~/.ssh/
   - gem install bundler
 install:
   - npm --production=false install

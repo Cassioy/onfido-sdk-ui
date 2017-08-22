@@ -6,8 +6,8 @@ TESTS_PATH=./test
 # go to test directory
 cd $TESTS_PATH
 
-# install gem dependencies
-bundle install
+# install gem dependencies using monster_rsa private key to fetch the monster gem
+GIT_SSH_COMMAND="ssh -i ~/.ssh/monster_rsa -F /dev/null" bundle install
 
 # run cucumber tests against deployed domain
 SDK_SURGE_URL="$DEPLOY_DOMAIN?async=false"
