@@ -1,11 +1,7 @@
 language: node_js
 addons:
+  chrome: stable
   ssh_known_hosts: bitbucket.org
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
 node_js:
   - 5
 os:
@@ -21,6 +17,7 @@ before_install:
     -in test/monster_rsa.enc -out ~/.ssh/monster_rsa -d
   - chmod 600 ~/.ssh/monster_rsa
   - gem install bundler
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 install:
   - npm --production=false install
 script:
